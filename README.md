@@ -23,3 +23,19 @@ Run command
 airflow initdb
 ```
 > once it returns `done` run command `airflow version` and it should list the version of airflow without any errors
+
+## Authentication to enable password on UI
+set  in `airflow.cfg`
+```
+[webserver]
+authenticate = True
+auth_backend = airflow.contrib.auth.backends.password_auth
+```
+
+Creating Super user
+1. The first user can only be created by script
+2. In the user.py file change the user credential
+then run the command
+```
+python user.py
+```
