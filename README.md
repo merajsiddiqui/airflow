@@ -39,3 +39,19 @@ then run the command
 ```
 python user.py
 ```
+
+There are three parts 
+1. Webserver
+2. Scheduler
+3. Worker
+
+Webserver is responsible for web ui to access airflow UI to see logs and every opther things
+
+Scheduer basically schedules the job to be process, If the configuration is ok then it will schedule the job
+
+Worker is responsible for completing the job which will execute the job
+
+If you want to access Web UI run command `airflow webserver`
+in another terminal run `airflow scheduler` which will basicallsy schedule the job
+Then in another terminal run `airflow worker` which will execute the job
+

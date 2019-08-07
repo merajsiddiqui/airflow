@@ -5,7 +5,7 @@ from airflow import DAG
 from datetime import datetime, timedelta
 
 from airflow.operators.bash_operator import BashOperator
-dag_yaml = os.path.dirname(__file__)+"/dags.yaml"
+dag_yaml = os.path.dirname(__file__ )+"/dags.yaml"
 
 with open(dag_yaml, 'r') as stream:
     try:

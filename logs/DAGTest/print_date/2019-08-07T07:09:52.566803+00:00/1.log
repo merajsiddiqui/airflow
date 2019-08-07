@@ -1,0 +1,26 @@
+[2019-08-07 13:39:01,220] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: DAGTest.print_date 2019-08-07T07:09:52.566803+00:00 [queued]>
+[2019-08-07 13:39:01,364] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: DAGTest.print_date 2019-08-07T07:09:52.566803+00:00 [queued]>
+[2019-08-07 13:39:01,365] {__init__.py:1353} INFO - 
+--------------------------------------------------------------------------------
+[2019-08-07 13:39:01,365] {__init__.py:1354} INFO - Starting attempt 1 of 2
+[2019-08-07 13:39:01,365] {__init__.py:1355} INFO - 
+--------------------------------------------------------------------------------
+[2019-08-07 13:39:01,531] {__init__.py:1374} INFO - Executing <Task(BashOperator): print_date> on 2019-08-07T07:09:52.566803+00:00
+[2019-08-07 13:39:01,532] {base_task_runner.py:119} INFO - Running: ['airflow', 'run', 'DAGTest', 'print_date', '2019-08-07T07:09:52.566803+00:00', '--job_id', '6', '--raw', '-sd', 'DAGS_FOLDER/dags.py', '--cfg_path', '/tmp/tmp7ujk8ujw']
+[2019-08-07 13:39:02,077] {base_task_runner.py:101} INFO - Job 6: Subtask print_date [2019-08-07 13:39:02,076] {settings.py:182} INFO - settings.configure_orm(): Using pool settings. pool_size=5, pool_recycle=1800, pid=5383
+[2019-08-07 13:39:02,207] {base_task_runner.py:101} INFO - Job 6: Subtask print_date [2019-08-07 13:39:02,206] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2019-08-07 13:39:02,644] {base_task_runner.py:101} INFO - Job 6: Subtask print_date [2019-08-07 13:39:02,642] {__init__.py:305} INFO - Filling up the DagBag from /home/meraj/airflow/dags/dags.py
+[2019-08-07 13:39:02,695] {base_task_runner.py:101} INFO - Job 6: Subtask print_date [2019-08-07 13:39:02,695] {cli.py:517} INFO - Running <TaskInstance: DAGTest.print_date 2019-08-07T07:09:52.566803+00:00 [running]> on host Lenovo-IdeaPad-S340
+[2019-08-07 13:39:02,722] {bash_operator.py:81} INFO - Tmp dir root location: 
+ /tmp
+[2019-08-07 13:39:02,722] {bash_operator.py:90} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=DAGTest
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2019-08-07T07:09:52.566803+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2019-08-07T07:09:52.566803+00:00
+[2019-08-07 13:39:02,723] {bash_operator.py:104} INFO - Temporary script location: /tmp/airflowtmplzx65acq/print_datejr9tswvk
+[2019-08-07 13:39:02,723] {bash_operator.py:114} INFO - Running command: date
+[2019-08-07 13:39:02,742] {bash_operator.py:123} INFO - Output:
+[2019-08-07 13:39:02,767] {bash_operator.py:127} INFO - Wed  7 Aug 13:39:02 IST 2019
+[2019-08-07 13:39:02,768] {bash_operator.py:131} INFO - Command exited with return code 0
+[2019-08-07 13:39:07,891] {logging_mixin.py:95} INFO - [2019-08-07 13:39:07,888] {jobs.py:2562} INFO - Task exited with return code 0
