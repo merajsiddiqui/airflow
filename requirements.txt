@@ -1,4 +1,4 @@
 flask==1.0.4
-apache-airflow==1.10.3
+apache-airflow==1.10.6
 mysqlclient==1.4.2.post1
 flask-bcrypt==0.7.1
